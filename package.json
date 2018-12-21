@@ -1,0 +1,23 @@
+{
+  "name": "qrregister",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yokeap/qrregister.git"
+  },
+  "author": "S.Sukprasertchai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yokeap/qrregister/issues"
+  },
+  "homepage": "https://github.com/yokeap/qrregister#readme",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "express": "^4.16.4"
+  }
+}
