@@ -1,10 +1,14 @@
 const express = require('express')
       , path = require('path')
+      , fs = require('fs')
       , app = express()
-      , http = require('http').Server(app);
+      , https = require('https').Server({
+          key: fs.readFileSync('./key.pem'),
+          cert: fs.readFileSync('./cert.pem')
+        }, app);
 
-http.listen(9010, function() {
-  console.log('listening on localhost:4000');
+https.listen(9010, function() {
+  console.log('listening on localhost:9010');
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
